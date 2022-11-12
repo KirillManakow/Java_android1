@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Delete_upd"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/Image_device"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="149dp"
+        android:onClick="onClickChooseImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground"
+        tools:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/Price_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="118dp"
+        android:ems="10"
+        android:hint="Цена"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/User_del" />
+
+    <EditText
+        android:id="@+id/User_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="118dp"
+        android:ems="10"
+        android:hint="Пользователь"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image_device" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/Device_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="118dp"
+        android:ems="10"
+        android:hint="Устройство"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Price_del" />
+
+    <Button
+        android:id="@+id/del_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="50dp"
+        android:onClick="Delet_Click"
+        android:text="Удалить"
+        app:layout_constraintEnd_toStartOf="@+id/button_otmena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Device_del" />
+
+    <Button
+        android:id="@+id/button_otmena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="94dp"
+        android:text="Отмена"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/del_button"
+        app:layout_constraintTop_toBottomOf="@+id/Device_del" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

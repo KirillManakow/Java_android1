@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/ListZakaz"
+        android:layout_width="413dp"
+        android:layout_height="571dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <Button
+        android:id="@+id/BtAdd"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="5dp"
+        android:backgroundTint="#0B245E"
+        android:fontFamily="cursive"
+        android:includeFontPadding="false"
+        android:minHeight="48dp"
+        android:onClick="Add_bt"
+        android:text="Добавить"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:cornerRadius="50dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListZakaz"
+        app:layout_constraintVertical_bias="0.742"
+        app:strokeColor="#FF0000"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
